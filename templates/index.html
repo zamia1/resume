@@ -1,0 +1,28 @@
+<!-- <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="file" name="image"> -->
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+
+      <input type="file" name="file[]" multiple>
+      <label for="names">Choose a gender:</label>
+  
+      <!-- <button type='submit'>Submit</button> -->
+    <label for="names">Choose a gender:</label>
+<select id="names" name="names">
+  <option value="boys">Boy</option>
+  <option value="girls">Girl</option>
+</select><br>
+
+<input type="radio"   style="vertical-align: middle" id="yage" name="age" value="yage">
+<label for="yage">25 years or younger</label><br>
+<input type="radio" style="vertical-align: middle" id="mage" name="age" value="mage">
+<label for="mage">25 - 30 years</label><br>
+<input type="radio" style="vertical-align: middle" id="mlage" name="age" value="mlage">
+<label for="mlage">30-35 years </label><br>
+<input type="radio" style="vertical-align: middle" id="lage" name="age" value="lage">
+<label for="lage">35-40 years </label><br>
+<input type="radio" style="vertical-align: middle" id="llage" name="age" value="llage">
+<label for="llage">40-45 years </label><br>
+<input type="submit" value="Submit">
+</form>
